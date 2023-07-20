@@ -10,15 +10,9 @@ export default function Search({ disabled }: { disabled?: boolean }) {
   const [isPending, startTransition] = useTransition();
 
   function handleSearch(term: string) {
-    const params = new URLSearchParams(window.location.search);
-    if (term) {
-      params.set('q', term);
-    } else {
-      params.delete('q');
-    }
 
     startTransition(() => {
-      replace(`${pathname}?${params.toString()}`);
+      replace(`${pathname}?q=${term}`);
     });
   }
 

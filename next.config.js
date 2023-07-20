@@ -8,13 +8,12 @@ const nextConfig = {
    */
   images: {
     unoptimized: true,
-    domains: ['avatars.githubusercontent.com', 'avatar.vercel.sh']
+    // domains: ['avatars.githubusercontent.com', 'avatar.vercel.sh']
   },
   output: "export",
-  basePath: "/app",
-  experimental: {
-    serverComponentsExternalPackages: ['@tremor/react']
-  }
+  // experimental: {
+  //   serverComponentsExternalPackages: ['@tremor/react']
+  // }
 };
 
 module.exports = nextConfig;
