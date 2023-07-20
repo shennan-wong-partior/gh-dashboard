@@ -10,6 +10,7 @@ const nextConfig = {
     unoptimized: true,
     // domains: ['avatars.githubusercontent.com', 'avatar.vercel.sh']
   },
+  basePath:"/gh-dashboard",
   output: "export",
   // experimental: {
   //   serverComponentsExternalPackages: ['@tremor/react']
