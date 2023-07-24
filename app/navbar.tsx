@@ -10,7 +10,10 @@ import logo from '../public/logo.png'
 
 const navigation = [
   { name: 'Dashboard', href: '/gh-dashboard' },
-  { name: 'Playground', href: '/gh-dashboard/playground' }
+  { name: 'Repositories', href: '/gh-dashboard/repositories' },
+  { name: 'Pipelines', href: '/gh-dashboard/pipelines' },
+  { name: 'Builds', href: '/gh-dashboard/builds' },
+  { name: 'Contributors', href: '/gh-dashboard/contributors' }
 ];
 
 function classNames(...classes: string[]) {
