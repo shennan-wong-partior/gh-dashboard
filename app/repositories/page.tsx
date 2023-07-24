@@ -13,23 +13,28 @@ import {
   Col,
   List,
   ListItem,
-  Icon
+  Icon,
+  Color
 } from '@tremor/react';
 
 import {
   BriefcaseIcon,
-  DesktopComputerIcon,
   ShieldExclamationIcon,
   ShoppingBagIcon,
-  ArrowNarrowRightIcon,
-  LightningBoltIcon,
   HomeIcon,
   TruckIcon,
   DocumentDuplicateIcon,
   CogIcon
 } from '@heroicons/react/24/solid';
 
-const qualityMetrics = [
+type MetricTypes = {
+  label: string;
+  value: string | number;
+  color: Color;
+  icon: any;
+};
+
+const qualityMetrics: MetricTypes[] = [
   {
     label: 'Code Quality',
     value: 'A',
